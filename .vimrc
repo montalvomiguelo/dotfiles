@@ -88,6 +88,8 @@ let g:formatters_java = ['google_java_format']
 let g:formatdef_ktfmt = '"ktfmt --kotlinlang-style -"'
 let g:formatters_kotlin = ['ktfmt']
 
+let g:formatters_liquid = ['prettier']
+
 ""
 "" File types
 ""
