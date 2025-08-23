@@ -157,10 +157,14 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-c = 'reload-config'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-    alt-shift-semicolon = 'mode service'
+    alt-r = 'mode resize'
 
-# 'service' binding mode declaration.
+# 'resize' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
-[mode.service.binding]
-    r = ['flatten-workspace-tree', 'mode main'] # reset layout
-    backspace = ['close-all-windows-but-current', 'mode main']
+[mode.resize.binding]
+    h = 'resize width -50'
+    j = 'resize height +50'
+    k = 'resize height -50'
+    l = 'resize width +50'
+    enter = 'mode main'
+    esc = 'mode main'
