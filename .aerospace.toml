@@ -10,6 +10,15 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
+# Tiled windows have margins
+[gaps]
+    inner.horizontal = 6
+    inner.vertical =   7
+    outer.left =       8
+    outer.bottom =     6
+    outer.top =        8
+    outer.right =      8
+
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
     alt-enter = '''exec-and-forget osascript -e '
