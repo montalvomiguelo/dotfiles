@@ -10,12 +10,12 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
-# Tiled windows have margins
+# Tiled windows have margins in macOS Sequoia
 [gaps]
     inner.horizontal = 6
-    inner.vertical =   7
+    inner.vertical =   6
     outer.left =       8
-    outer.bottom =     6
+    outer.bottom =     8
     outer.top =        8
     outer.right =      8
 
