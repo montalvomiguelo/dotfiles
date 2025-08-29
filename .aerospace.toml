@@ -12,8 +12,8 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # Tiled windows have margins in macOS Sequoia
 [gaps]
-    inner.horizontal = 6
-    inner.vertical =   6
+    inner.horizontal = 8
+    inner.vertical =   8
     outer.left =       8
     outer.bottom =     8
     outer.top =        8
