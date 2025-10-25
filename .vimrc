@@ -39,13 +39,7 @@ set list                            " Show invisible characters
 set backspace=indent,eol,start      " Backspace for dummies
 
 " List chars
-set listchars=""                    " Reset the listchars
-set listchars=tab:\ \               " a tab should display as "  ", trailing whitespace as "."
-set listchars+=trail:.              " show trailing spaces as dots
-set listchars+=extends:>            " The character to show in the last column when wrap is
-                                    " off and the line continues beyond the right of the screen
-set listchars+=precedes:<           " The character to show in the last column when wrap is
-                                    " off and the line continues beyond the left of the screen
+set listchars=tab:\ \ ,trail:.,extends:>,precedes:<
 
 ""
 "" Backup and swap files
@@ -99,9 +93,7 @@ autocmd FileType kotlin setlocal shiftwidth=4 softtabstop=4 tabstop=8
 "" Plugins
 ""
 
-if has('syntax') && has('eval')
-  packadd! matchit                  " makes % command work better (not backward-compatible)
-endif
+packadd! matchit                  " makes % command work better (not backward-compatible)
 
 packadd minpac
 call minpac#init()
@@ -121,15 +113,15 @@ call minpac#add('marcweber/vim-addon-mw-utils')
 call minpac#add('garbas/vim-snipmate')
 call minpac#add('honza/vim-snippets')
 call minpac#add('mileszs/ack.vim')
-call minpac#add('lifepillar/vim-colortemplate', {'type':'opt'})
+call minpac#add('montalvomiguelo/vim-tokyonight256')
 call minpac#add('k-takata/minpac', {'type':'opt'})
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
 " SnipMate
-:imap <C-J> <Plug>snipMateNextOrTrigger
-:smap <C-J> <Plug>snipMateNextOrTrigger
+imap <C-J> <Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
 
 " ACK
 cnoreabbrev Ack Ack!
