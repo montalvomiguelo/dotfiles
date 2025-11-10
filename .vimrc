@@ -21,7 +21,7 @@ set wildmenu                        " Show list instead of just completing
 "" Color
 ""
 
-color tokyonight256_moon           " Load a colorscheme
+" color tokyonight256_moon           " Load a colorscheme
 if has("termguicolors")
   set termguicolors                 " Enable true color support
 end
@@ -113,7 +113,6 @@ call minpac#add('marcweber/vim-addon-mw-utils')
 call minpac#add('garbas/vim-snipmate')
 call minpac#add('honza/vim-snippets')
 call minpac#add('mileszs/ack.vim')
-call minpac#add('montalvomiguelo/vim-tokyonight256')
 call minpac#add('k-takata/minpac', {'type':'opt'})
 
 command! PackUpdate call minpac#update()
