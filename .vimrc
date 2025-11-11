@@ -21,7 +21,7 @@ set wildmenu                        " Show list instead of just completing
 "" Color
 ""
 
-" color tokyonight256_moon           " Load a colorscheme
+color default256                    " Load a colorscheme
 if has("termguicolors")
   set termguicolors                 " Enable true color support
 end
