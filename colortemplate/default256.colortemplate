@@ -4,107 +4,85 @@ Short name:  default256
 Author:      Generated from Neovim default colorscheme
 
 Environments: gui 256
-Background:   dark
+Background: dark
 
-;;; Color palette - extracted from Neovim's default colorscheme
-Color: colorFg          #e0e2ea        ~
-Color: colorBg          #14161b        ~
-
-Color: color00          #14161b        ~
-Color: color08          #4f5258        ~
-
-Color: color01          #ffc0b9        ~
-Color: color09          #ffc0b9        ~
-
-Color: color02          #b3f6c0        ~
-Color: color10          #b3f6c0        ~
-
-Color: color03          #fce094        ~
-Color: color11          #fce094        ~
-
-Color: color04          #a6dbff        ~
-Color: color12          #a6dbff        ~
-
-Color: color05          #e0e2ea        ~
-Color: color13          #e0e2ea        ~
-
-Color: color06          #8cf8f7        ~
-Color: color14          #8cf8f7        ~
-
-Color: color07          #9b9ea4        ~
-Color: color15          #e0e2ea        ~
-
-Color: colorLine        #2c2e33        ~
-Color: colorB           #2c2e33        ~
-Color: colorF           #07080d        ~
-Color: colorNonT        #4f5258        ~
-Color: colorC           #fce094        ~
-Color: colorlC          #e0e2ea        ~
-Color: colorV           #4f5258        ~
-Color: colorSrch        #6b5300        ~
-Color: colorInc         #6b5300        ~
-Color: colorMP          #4f5258        ~
-Color: colorErr         #590008        ~
-Color: colorQF          #2c2e33        ~
-
-Color: colorTitle       #2c2e33        ~
-Color: colorTitleNC     #2c2e33        ~
-
-Color: colorShadow      #07080d        ~
-
-Color: diffAdd          #005523        ~
-Color: diffDelete       #590008        ~
-Color: diffChange       #4f5258        ~
-Color: diffText         #007373        ~
-
-Color: black            #14161b        ~
-Color: white            #e0e2ea        ~
-Color: Added            #b3f6c0        ~
-Color: Changed          #8cf8f7        ~
-Color: Removed          #ffc0b9        ~
-
-Color: statusLineFg     #2c2e33        ~
-Color: statusLineBg     #c4c6cd        ~
-Color: statusLineNCFg   #e0e2ea        ~
-Color: statusLineNCBg   #4f5258        ~
-
-Color: colorHlFg        #eef1f8        ~
+;;; Color palette
+Color: NvimLightGrey1   #eef1f8        ~
+Color: NvimLightGrey2   #e0e2ea        ~
+Color: NvimLightGrey3   #c4c6cd        ~
+Color: NvimLightGrey4   #9b9ea4        ~
+Color: NvimDarkGrey1    #07080d        ~
+Color: NvimDarkGrey2    #14161b        ~
+Color: NvimDarkGrey3    #2c2e33        ~
+Color: NvimDarkGrey4    #4f5258        ~
+Color: NvimLightRed     #ffc0b9        ~
+Color: NvimLightGreen   #b3f6c0        ~
+Color: NvimLightYellow  #fce094        ~
+Color: NvimLightBlue    #a6dbff        ~
+Color: NvimLightMagenta #ffcaff        ~
+Color: NvimLightCyan    #8cf8f7        ~
+Color: NvimDarkRed      #590008        ~
+Color: NvimDarkGreen    #005523        ~
+Color: NvimDarkYellow   #6b5300        ~
+Color: NvimDarkMagenta  #470045        ~
+Color: NvimDarkCyan     #007373        ~
 
 
-Term colors: color00 color01 color02 color03 color04 color05 color06 color07
-             color08 color09 color10 color11 color12 color13 color14 color15
+Term colors: NvimDarkGrey2 NvimLightRed NvimLightGreen NvimLightYellow
+             NvimLightBlue NvimLightMagenta NvimLightCyan NvimLightGrey2
+             NvimDarkGrey2 NvimLightRed NvimLightGreen NvimLightYellow
+             NvimLightBlue NvimLightMagenta NvimLightCyan NvimLightGrey2
 
 
-;;; links (unchanged as they are high-level aliases)
-Float                                  -> Number
-Number                                 -> Constant
-StatusLineTerm                         -> StatusLine
-StatusLineTermNC                       -> StatusLineNC
-LineNrAbove                            -> LineNr
-LineNrBelow                            -> LineNr
+;;; links
+ComplMatchIns                          -> NONE
+CursorIM                               -> Cursor
 CursorLineFold                         -> FoldColumn
 CursorLineSign                         -> SignColumn
-
-;;; UI element links
-WinSeparator                           -> Normal
-VertSplit                              -> WinSeparator
-TabLine                                -> StatusLineNC
-TabLineFill                            -> TabLine
+DiffTextAdd                            -> DiffText
 EndOfBuffer                            -> NonText
 FoldColumn                             -> SignColumn
-VisualNOS                              -> Visual
-PmenuSbar                              -> Pmenu
-PmenuKind                              -> Pmenu
-PmenuKindSel                           -> PmenuSel
+IncSearch                              -> CurSearch
+LineNrAbove                            -> LineNr
+LineNrBelow                            -> LineNr
+MsgArea                                -> NONE
 PmenuExtra                             -> Pmenu
 PmenuExtraSel                          -> PmenuSel
-IncSearch                              -> CurSearch
+PmenuKind                              -> Pmenu
+PmenuKindSel                           -> PmenuSel
+PmenuSbar                              -> Pmenu
+PmenuBorder                            -> Pmenu
+PreInsert                              -> Added
+StatusLineTerm                         -> StatusLine
+StatusLineTermNC                       -> StatusLineNC
+TabLine                                -> StatusLineNC
+TabLineFill                            -> TabLine
+VertSplit                              -> Normal
+VisualNOS                              -> Visual
 WildMenu                               -> PmenuSel
 Character                              -> Constant
-Ignore                                 -> Normal
+Number                                 -> Constant
+Boolean                                -> Constant
+Float                                  -> Number
+Conditional                            -> Statement
+Repeat                                 -> Statement
+Label                                  -> Statement
+Keyword                                -> Statement
+Exception                              -> Statement
+Include                                -> PreProc
+Define                                 -> PreProc
+Macro                                  -> PreProc
+PreCondit                              -> PreProc
+StorageClass                           -> Type
+Structure                              -> Type
+Typedef                                -> Type
+Tag                                    -> Special
+SpecialChar                            -> Special
+SpecialComment                         -> Special
 Debug                                  -> Special
+Ignore                                 -> Normal
 
-;;; ft links (unchanged)
+;;; filetype and plugins
 vimCommentString                       -> Comment
 vimVar                                 -> Normal
 vimOper                                -> Normal
@@ -140,113 +118,105 @@ lspDiagVirtualTextHint                 -> Added
 lspDiagSignHintText                    -> Added
 lspDiagVirtualTextInfo                 -> Question
 lspDiagSignInfoText                    -> Question
+GitGutterAdd                           -> Added
+GitGutterChange                        -> Changed
+GitGutterDelete                        -> Removed
+GitGutterChangeDelete                  -> Changed
 
 
-;;; chrome (simplified for GUI and 256-color terminals)
-Normal                  color15        color00
+;;; chrome
+Normal                  NvimLightGrey2 NvimDarkGrey2
 
-StatusLine              statusLineFg   statusLineBg   reverse
-StatusLineNC            statusLineNCFg statusLineNCBg
+StatusLine              NvimDarkGrey3  NvimLightGrey3
+StatusLineNC            NvimLightGrey2 NvimDarkGrey4
 
 TabLineSel              none           none           bold
 
-ToolbarLine             none           none
-ToolbarButton           none           none
-QuickFixLine            color14        none
- /gui                   color14        none
+QuickFixLine            NvimLightCyan  none
+ /gui                   NvimLightCyan  none
  /256+tgc true          omit           omit
 
 CursorLineNr            none           none           bold
-LineNr                  color08        none
-NonText                 color08        none
-SpecialKey              color08        none
+LineNr                  NvimDarkGrey4  none
+NonText                 NvimDarkGrey4  none
+SpecialKey              NvimDarkGrey4  none
 
-Visual                  none           color08
- /gui                   none           colorV
+Visual                  none           NvimDarkGrey4
+ /gui                   none           NvimDarkGrey4
  /256+tgc true          omit           omit
 
-Pmenu                   none           colorB         reverse
-PmenuThumb              none           color08
-PmenuSel                none           none           underline,reverse
- /gui                   none           none           reverse
+Pmenu                   none           NvimDarkGrey3
+PmenuThumb              none           NvimDarkGrey4
+PmenuSel                none           none
 PmenuMatch              none           none           bold
 PmenuMatchSel           none           none           bold
-PmenuBorder             none           none
-PmenuShadow             none           none
+PmenuShadow             none           NvimDarkGrey4
 
-SignColumn              color08        none
-Error                   colorHlFg      colorErr
- /gui                   colorHlFg      colorErr
+SignColumn              NvimDarkGrey4  none
+Error                   NvimLightGrey1 NvimDarkRed
+ /gui                   NvimLightGrey1 NvimDarkRed
  /256+tgc true          omit           omit
-ErrorMsg                color01        none
-ModeMsg                 color02        none
-MoreMsg                 color14        none
-Question                color14        none
-WarningMsg              color11        none
+ErrorMsg                NvimLightRed   none
+ModeMsg                 NvimLightGreen none
+MoreMsg                 NvimLightCyan  none
+Question                NvimLightCyan  none
+WarningMsg              NvimLightYellow none
 
-TitleBar                none           none
-TitleBarNC              none           none
+Todo                    NvimLightGrey2 none           bold
+MatchParen              none           NvimDarkGrey4  bold
+Search                  NvimLightGrey1 NvimDarkYellow
+CurSearch               NvimDarkGrey1  NvimLightYellow
 
-Todo                    white          none           bold
-MatchParen              none           colorMP        bold
-Search                  colorHlFg      colorSrch
- /gui                   colorHlFg      colorSrch
- /256+tgc true          omit           omit
-CurSearch               colorHlFg      colorInc
- /gui                   colorHlFg      colorInc
- /256+tgc true          omit           omit
+Cursor                  bg             fg
+lCursor                 bg             fg
 
-debugPC                 none           none
-debugBreakpoint         none           none
+CursorLine              none           NvimDarkGrey3
+CursorColumn            none           NvimDarkGrey3
+Folded                  NvimLightGrey4 NvimDarkGrey1
+ColorColumn             none           NvimDarkGrey4
 
-Cursor                  black          white
-lCursor                 black          white
-
-CursorLine              none           colorLine
-CursorColumn            none           colorLine
-Folded                  color07        colorF
-ColorColumn             none           color08        reverse
-
-SpellBad                none           none           s=Removed undercurl
- /gui                   none           none           s=Removed undercurl
- /256+tgc true          none           none           s=Removed undercurl
-SpellCap                none           none           s=color11 undercurl
- /gui                   none           none           s=color11 undercurl
- /256+tgc true          none           none           s=color11 undercurl
-SpellLocal              none           none           s=Added undercurl
- /gui                   none           none           s=Added undercurl
- /256+tgc true          none           none           s=Added undercurl
-SpellRare               none           none           s=color14 undercurl
- /gui                   none           none           s=color14 undercurl
- /256+tgc true          none           none           s=color14 undercurl
+SpellBad                none           none           s=NvimLightRed undercurl
+ /gui                   none           none           s=NvimLightRed undercurl
+ /256+tgc true          none           none           s=NvimLightRed undercurl
+SpellCap                none           none           s=NvimLightYellow undercurl
+ /gui                   none           none           s=NvimLightYellow undercurl
+ /256+tgc true          none           none           s=NvimLightYellow undercurl
+SpellLocal              none           none           s=NvimLightGreen undercurl
+ /gui                   none           none           s=NvimLightGreen undercurl
+ /256+tgc true          none           none           s=NvimLightGreen undercurl
+SpellRare               none           none           s=NvimLightCyan undercurl
+ /gui                   none           none           s=NvimLightCyan undercurl
+ /256+tgc true          none           none           s=NvimLightCyan undercurl
 
 
-;;; :h group-names (simplified)
-Comment                 color07        none
-Constant                color15        none
-String                  color02        none
-Identifier              color12        none
-Function                color14        none
+;;; :h group-names
+Comment                 NvimLightGrey4 none
+Constant                NvimLightGrey2 none
+String                  NvimLightGreen none
+Identifier              NvimLightBlue  none
+Function                NvimLightCyan  none
+Operator                NvimLightGrey2 none
 
-Statement               color15        none           bold
-PreProc                 color15        none
-Type                    color15        none
-Special                 color14        none
+Statement               NvimLightGrey2 none           bold
+PreProc                 NvimLightGrey2 none
+Type                    NvimLightGrey2 none
+Special                 NvimLightCyan  none
+Delimiter               NvimLightGrey2 none
 
 Underlined              none           none           underline
-Title                   color15        none           bold
-Directory               color14        none
-Conceal                 colorNonT      none
+Title                   NvimLightGrey2 none           bold
+Directory               NvimLightCyan  none
+Conceal                 NvimDarkGrey4  none
 
-DiffAdd                 colorHlFg      diffAdd
- /256                   colorHlFg      diffAdd
-DiffChange              colorHlFg      diffChange
- /256                   colorHlFg      diffChange
-DiffText                colorHlFg      diffText
- /256                   colorHlFg      diffText
-DiffDelete              color09        none
- /256                   color09        none
+DiffAdd                 NvimLightGrey1 NvimDarkGreen
+ /256                   NvimLightGrey1 NvimDarkGreen
+DiffChange              NvimLightGrey1 NvimDarkGrey4
+ /256                   NvimLightGrey1 NvimDarkGrey4
+DiffText                NvimLightGrey1 NvimDarkCyan
+ /256                   NvimLightGrey1 NvimDarkCyan
+DiffDelete              NvimLightRed   none           bold
+ /256                   NvimLightRed   none           bold
 
-Added                   Added          none
-Changed                 Changed        none
-Removed                 Removed        none
+Added                   NvimLightGreen none
+Changed                 NvimLightCyan  none
+Removed                 NvimLightRed   none
