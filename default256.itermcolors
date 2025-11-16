@@ -223,6 +223,19 @@
 		<key>Red Component</key>
 		<real>0.07843</real>
 	</dict>
+  <key>Badge Color</key>
+	<dict>
+		<key>Alpha Component</key>
+		<real>0.5</real>
+		<key>Blue Component</key>
+		<real>0.72549</real>
+		<key>Color Space</key>
+		<string>sRGB</string>
+		<key>Green Component</key>
+		<real>0.75294</real>
+		<key>Red Component</key>
+		<real>1.0</real>
+	</dict>
 	<key>Bold Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -249,6 +262,19 @@
 		<key>Red Component</key>
 		<real>0.87843</real>
 	</dict>
+  <key>Cursor Guide Color</key>
+	<dict>
+		<key>Alpha Component</key>
+		<real>0.25</real>
+		<key>Blue Component</key>
+		<real>0.58039</real>
+		<key>Color Space</key>
+		<string>sRGB</string>
+		<key>Green Component</key>
+		<real>0.87843</real>
+		<key>Red Component</key>
+		<real>0.98824</real>
+	</dict>
 	<key>Cursor Text Color</key>
 	<dict>
 		<key>Alpha Component</key>
@@ -274,6 +300,19 @@
 		<real>0.88627</real>
 		<key>Red Component</key>
 		<real>0.87843</real>
+	</dict>
+  <key>Link Color</key>
+	<dict>
+		<key>Alpha Component</key>
+		<real>1</real>
+		<key>Blue Component</key>
+		<real>0.96863</real>
+		<key>Color Space</key>
+		<string>sRGB</string>
+		<key>Green Component</key>
+		<real>0.97255</real>
+		<key>Red Component</key>
+		<real>0.54902</real>
 	</dict>
 	<key>Selected Text Color</key>
 	<dict>
