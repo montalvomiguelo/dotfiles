@@ -131,7 +131,7 @@ hi Operator guifg=#e0e2ea guibg=NONE guisp=NONE gui=NONE ctermfg=254 ctermbg=NON
 hi Pmenu guifg=NONE guibg=#2c2e33 guisp=NONE gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 hi PmenuMatch guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
 hi PmenuMatchSel guifg=NONE guibg=NONE guisp=NONE gui=bold ctermfg=NONE ctermbg=NONE cterm=bold
-hi PmenuSel guifg=NONE guibg=NONE guisp=NONE gui=reverse ctermfg=NONE ctermbg=NONE cterm=reverse
+hi PmenuSel guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 hi PmenuShadow guifg=NONE guibg=#4f5258 guisp=NONE gui=NONE ctermfg=NONE ctermbg=239 cterm=NONE
 hi PmenuThumb guifg=NONE guibg=#4f5258 guisp=NONE gui=NONE ctermfg=NONE ctermbg=239 cterm=NONE
 hi PreProc guifg=#e0e2ea guibg=NONE guisp=NONE gui=NONE ctermfg=254 ctermbg=NONE cterm=NONE
