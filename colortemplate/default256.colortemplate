@@ -133,8 +133,6 @@ StatusLineNC            NvimLightGrey2 NvimDarkGrey4
 TabLineSel              none           none           bold
 
 QuickFixLine            NvimLightCyan  none
- /gui                   NvimLightCyan  none
- /256+tgc true          omit           omit
 
 CursorLineNr            none           none           bold
 LineNr                  NvimDarkGrey4  none
@@ -142,20 +140,16 @@ NonText                 NvimDarkGrey4  none
 SpecialKey              NvimDarkGrey4  none
 
 Visual                  none           NvimDarkGrey4
- /gui                   none           NvimDarkGrey4
- /256+tgc true          omit           omit
 
 Pmenu                   none           NvimDarkGrey3
 PmenuThumb              none           NvimDarkGrey4
-PmenuSel                none           none
+PmenuSel                none           none           reverse
 PmenuMatch              none           none           bold
 PmenuMatchSel           none           none           bold
 PmenuShadow             none           NvimDarkGrey4
 
 SignColumn              NvimDarkGrey4  none
 Error                   NvimLightGrey1 NvimDarkRed
- /gui                   NvimLightGrey1 NvimDarkRed
- /256+tgc true          omit           omit
 ErrorMsg                NvimLightRed   none
 ModeMsg                 NvimLightGreen none
 MoreMsg                 NvimLightCyan  none
@@ -176,17 +170,9 @@ Folded                  NvimLightGrey4 NvimDarkGrey1
 ColorColumn             none           NvimDarkGrey4
 
 SpellBad                none           none           s=NvimLightRed undercurl
- /gui                   none           none           s=NvimLightRed undercurl
- /256+tgc true          none           none           s=NvimLightRed undercurl
 SpellCap                none           none           s=NvimLightYellow undercurl
- /gui                   none           none           s=NvimLightYellow undercurl
- /256+tgc true          none           none           s=NvimLightYellow undercurl
 SpellLocal              none           none           s=NvimLightGreen undercurl
- /gui                   none           none           s=NvimLightGreen undercurl
- /256+tgc true          none           none           s=NvimLightGreen undercurl
 SpellRare               none           none           s=NvimLightCyan undercurl
- /gui                   none           none           s=NvimLightCyan undercurl
- /256+tgc true          none           none           s=NvimLightCyan undercurl
 
 
 ;;; :h group-names
