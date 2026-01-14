@@ -75,7 +75,7 @@ noremap k gk
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Autoformat
-noremap <leader>f :Autoformat<CR>
+noremap <leader>= :Autoformat<CR>
 let g:formatdef_google_java_format = '"google-java-format -"'
 let g:formatters_java = ['google_java_format']
 
@@ -124,7 +124,7 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 
 " ACK
 cnoreabbrev Ack Ack!
-nnoremap <Leader>F :Ack!<Space>
+nnoremap <Leader>f :Ack!<Space>
 if executable('rg')
   let g:ackprg = 'rg --vimgrep'
 endif
