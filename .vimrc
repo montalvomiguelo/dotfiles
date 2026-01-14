@@ -124,7 +124,7 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 
 " ACK
 cnoreabbrev Ack Ack!
-nnoremap <Leader>f :Ack!<Space>
+nnoremap <Leader>a :Ack!<Space>
 if executable('rg')
   let g:ackprg = 'rg --vimgrep'
 endif
