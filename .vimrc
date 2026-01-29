@@ -113,6 +113,7 @@ call minpac#add('marcweber/vim-addon-mw-utils')
 call minpac#add('garbas/vim-snipmate')
 call minpac#add('honza/vim-snippets')
 call minpac#add('mileszs/ack.vim')
+call minpac#add('preservim/tagbar')
 call minpac#add('k-takata/minpac', {'type':'opt'})
 
 command! PackUpdate call minpac#update()
@@ -121,6 +122,9 @@ command! PackClean call minpac#clean()
 " SnipMate
 imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
+
+" Tagbar
+nmap <Leader>tt :TagbarToggle<CR>
 
 " ACK
 cnoreabbrev Ack Ack!
