@@ -80,6 +80,7 @@ Tag                                    -> Special
 SpecialChar                            -> Special
 SpecialComment                         -> Special
 Debug                                  -> Special
+SpecialKey                             -> Special
 Ignore                                 -> Normal
 
 ;;; filetype and plugins
@@ -137,7 +138,6 @@ QuickFixLine            NvimLightCyan  none
 CursorLineNr            none           none           bold
 LineNr                  NvimDarkGrey4  none
 NonText                 NvimDarkGrey4  none
-SpecialKey              NvimDarkGrey4  none
 
 Visual                  none           NvimDarkGrey4
 
