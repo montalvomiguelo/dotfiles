@@ -1,7 +1,11 @@
 ; vim: cc=25,40,55 vsts=24,15,15,4
 Full name:   default256
 Short name:  default256
-Author:      Generated from Neovim default colorscheme
+Description: Neovim's default color scheme
+Author:      Miguel Montalvo <montalvomiguelo@aol.com>
+URL:         https://github.com/montalvomiguelo/neovim-schemes
+License:     Same as Vim
+Options:     backend=vim
 
 Environments: gui 256
 Background: dark
@@ -80,7 +84,6 @@ Tag                                    -> Special
 SpecialChar                            -> Special
 SpecialComment                         -> Special
 Debug                                  -> Special
-SpecialKey                             -> Special
 Ignore                                 -> Normal
 
 ;;; filetype and plugins
@@ -128,8 +131,8 @@ GitGutterChangeDelete                  -> Changed
 ;;; chrome
 Normal                  NvimLightGrey2 NvimDarkGrey2
 
-StatusLine              NvimDarkGrey3  NvimLightGrey3
-StatusLineNC            NvimLightGrey2 NvimDarkGrey4
+StatusLine              NvimLightGrey2 NvimDarkGrey4
+StatusLineNC            NvimLightGrey3 NvimDarkGrey3
 
 TabLineSel              none           none           bold
 
@@ -138,12 +141,13 @@ QuickFixLine            NvimLightCyan  none
 CursorLineNr            none           none           bold
 LineNr                  NvimDarkGrey4  none
 NonText                 NvimDarkGrey4  none
+SpecialKey              NvimDarkGrey4  none
 
 Visual                  none           NvimDarkGrey4
 
 Pmenu                   none           NvimDarkGrey3
 PmenuThumb              none           NvimDarkGrey4
-PmenuSel                none           none
+PmenuSel                none           none           reverse
 PmenuMatch              none           none           bold
 PmenuMatchSel           none           none           bold
 PmenuShadow             none           NvimDarkGrey4
@@ -195,13 +199,9 @@ Directory               NvimLightCyan  none
 Conceal                 NvimDarkGrey4  none
 
 DiffAdd                 NvimLightGrey1 NvimDarkGreen
- /256                   NvimLightGrey1 NvimDarkGreen
 DiffChange              NvimLightGrey1 NvimDarkGrey4
- /256                   NvimLightGrey1 NvimDarkGrey4
 DiffText                NvimLightGrey1 NvimDarkCyan
- /256                   NvimLightGrey1 NvimDarkCyan
 DiffDelete              NvimLightRed   none           bold
- /256                   NvimLightRed   none           bold
 
 Added                   NvimLightGreen none
 Changed                 NvimLightCyan  none
