@@ -8,6 +8,7 @@ License:     Same as Vim
 Options:     backend=vim
 
 Environments: gui 256
+
 Background: dark
 
 ;;; Color palette
