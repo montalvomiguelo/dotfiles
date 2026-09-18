@@ -61,15 +61,20 @@ set incsearch                       " Find as you type search
 set ignorecase                      " Case insensitive search
 set smartcase                       " Case sensitive when uc present
 
+
+""
+"" UX
+""
+
+set scrolloff=4                     " lines of context
+set sidescrolloff=8                 " columns of context
+
+
 ""
 "" Basic Keymaps
 ""
 
 let mapleader = ','                 " set <Leader>
-
-" Seamlessly treat visual lines as actual lines when moving around
-noremap j gj
-noremap k gk
 
 " Use CTRL-L to clear the highlighting of 'hlsearch'
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
