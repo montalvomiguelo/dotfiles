@@ -80,7 +80,7 @@ let mapleader = ','                 " set <Leader>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 " Autoformat
-noremap <leader>= :Autoformat<CR>
+nnoremap <leader>= :Autoformat<CR>
 let g:formatdef_google_java_format = '"google-java-format -"'
 let g:formatters_java = ['google_java_format']
 
