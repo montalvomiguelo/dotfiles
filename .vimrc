@@ -16,6 +16,7 @@ syntax on                           " Syntax highlighting
 set signcolumn=yes                  " Always show the signcolumn
 set updatetime=300                  " Smaller updatetime for CursorHold & CursorHoldI
 set wildmenu                        " Show list instead of just completing
+set confirm
 
 ""
 "" Color
@@ -37,6 +38,8 @@ set shiftwidth=2                    " Use indents of 2 spaces
 set expandtab                       " Tabs are spaces, not tabs
 set list                            " Show invisible characters
 set backspace=indent,eol,start      " Backspace for dummies
+set linebreak
+set shiftround
 
 " List chars
 set listchars=tab:\ \ ,trail:.,extends:>,precedes:<
@@ -68,6 +71,9 @@ set smartcase                       " Case sensitive when uc present
 
 set scrolloff=4                     " lines of context
 set sidescrolloff=8                 " columns of context
+set scrolloff=8 sidescrolloff=8     " keep context around cursor
+set wildmode=longest:full,full      " smarter :command completion
+set splitbelow splitright           " new splits open where you'd expect
 
 
 ""
@@ -75,6 +81,11 @@ set sidescrolloff=8                 " columns of context
 ""
 
 let mapleader = ','                 " set <Leader>
+
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+xnoremap <expr> j v:count ? 'j' : 'gj'
+xnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Use CTRL-L to clear the highlighting of 'hlsearch'
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
@@ -93,6 +104,11 @@ let g:formatters_liquid = ['prettier']
 "" File types
 ""
 autocmd FileType kotlin setlocal shiftwidth=4 softtabstop=4 tabstop=8
+
+augroup wrap_spell
+  autocmd!
+  autocmd FileType text,plaintex,typst,gitcommit,markdown setlocal wrap spell
+augroup END
 
 ""
 "" Plugins
