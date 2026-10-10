@@ -84,8 +84,6 @@ let mapleader = ','                 " set <Leader>
 
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
-xnoremap <expr> j v:count ? 'j' : 'gj'
-xnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Use CTRL-L to clear the highlighting of 'hlsearch'
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
