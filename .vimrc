@@ -101,9 +101,13 @@ let g:formatters_liquid = ['prettier']
 ""
 "" File types
 ""
-autocmd FileType kotlin setlocal shiftwidth=4 softtabstop=4 tabstop=8
+augroup filetype_overrides
+  autocmd!
+  autocmd FileType kotlin setlocal shiftwidth=4 softtabstop=4 tabstop=8
+augroup END
 
-augroup wrap_spell
+
+augroup prose
   autocmd!
   autocmd FileType text,plaintex,gitcommit,markdown setlocal wrap spell
 augroup END
