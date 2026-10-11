@@ -105,7 +105,7 @@ autocmd FileType kotlin setlocal shiftwidth=4 softtabstop=4 tabstop=8
 
 augroup wrap_spell
   autocmd!
-  autocmd FileType text,plaintex,typst,gitcommit,markdown setlocal wrap spell
+  autocmd FileType text,plaintex,gitcommit,markdown setlocal wrap spell
 augroup END
 
 ""
